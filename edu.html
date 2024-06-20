@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ADD8E6; 
+            padding: 30px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #A0CFEC; 
+            padding: 10px; 
+            border-radius: 10px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0000EE; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+           font-weight: bold;
+           color: #0C090A;
+       }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0CFEC;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #0000EE;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ADD8E6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ADD8E6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #B3D9D9; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 90%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 0 auto; 
+        }
+
+         th, td {
+            border: 1px solid black; 
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size:40px; font-family:Garamond;">Education &#127891;</h1>
+    <p style="font-size:30px; font-family:Garamond;">of Anisa's journey</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="bio.html">Biodata</a> |
+    <a href="interest.html">Interest</a> |
+    <div class="dropdown">
+        <a href="edu.html" class="active dropbtn">Education</a>
+        <div class="dropdown-content">
+            <a href="preschool.html" target="_blank">Preschool</a>
+            <a href="primary.html" target="_blank">Primary School</a>
+            <a href="secondaryschool.html" target="_blank">Secondary School</a>
+            <a href="university.html" target="_blank">University</a>
+        </div>
+    </div> |
+    <a href="fam.html">Family</a> |
+    <div class="dropdown">
+        <a href="gallery.html" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+            <a href="photo.html" target="_blank">Photo</a>
+            <a href="video.html" target="_blank">Video</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+        <h2>Anisa's Journey Through Education📄‧₊˚🖇️</h2>
+        <table>
+            <tr>
+                <th>Education</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Name of school and university</th>
+            </tr>
+            <tr>
+                <td>Preschool</td>
+                <td>2009</td>
+                <td>2010</td>
+                <td>PraSekolah JAIS Pekan Sabak</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Primary School</td>
+                <td rowspan="2">2011</td>
+                <td rowspan="2">2016</td>
+                <td>Sekolah Kebangsaan Doktor Abdul Latiff, Sabak Bernam</td>
+            </tr>
+            <tr>
+                <td>SRA Muhammadiah Pekan Sabak, Sabak Bernam</td>
+            </tr>
+            <tr>
+                <td>Secondary School</td>
+                <td>2017</td>
+                <td>2022</td>
+                <td>Sekolah Menengah Kebangsaan (SMK) Ungku Aziz, Sabak Bernam</td>
+            </tr>
+            <tr>
+                <td>University</td>
+                <td>2022</td>
+                <td>Present</td>
+                <td>Universiti Teknologi Mara (UiTM) Cawangan Kedah</td>
+            </tr>
+        </table>
+        <p>Here is my education journey. As you can see, my education started around 2009 until 2010 when I went to preschool at 5 to 6 years old. The name of my preschool was PraSekolah JAIS Pekan Sabak. Next, when I was 7 years old, I went to primary school at Sekolah Kebangsaan Doktor Abdul Latiff, Sabak Bernam. During 2016, I had to take an exam called "Ujian Pencapaian Sekolah Rendah (UPSR)". Additionally, I attended a religious school named SRA Muhammadiah Pekan Sabak, Sabak Bernam. This school offered both general and religious education. I took religious lessons in subjects such as "Sirah", Morals ("Akhlak"), and "Tauhid". In 2016, I also took another exam called "Ujian Penilaian Sekolah Rendah Agama (PSRA)". This exam is conducted for Year 6 students in Religious Primary Schools, Integration Religious Primary Schools, and Al-Quran and Fardhu Ain (KAFA) Integration Classes throughout Selangor.</p>
+        <p>Moreover, I continued my education at Sekolah Menengah Kebangsaan (SMK) Ungku Aziz, Sabak Bernam. This school has two sessions: Form 1 and Form 2 students attend in the evening, while Form 3, Form 4, and Form 5 students attend in the morning. In 2019, I took the "Pentaksiran Tingkatan Tiga (PT3)" exam and achieved good results. For Form 4 students, there are subject packages that allow students to choose subjects they like. These include core subjects like "Bahasa Melayu", English, Mathematics, History, and Islamic Studies/Moral Education. Additionally, there are categories for STEM (Science, Technology, Engineering & Mathematics) and Humanities & Arts. In Form 4, I took Sports Science, Technical Graphics Communication, and Visual Art Education. During 2020, the COVID-19 pandemic began, and I had my first experience with online classes. My examinations were also conducted online, and my "Sijil Pelajaran Malaysia (SPM)" exam was postponed. I took the SPM examination in 2022 and achieved excellent results.</p>
+        <p>Currently, I am continuing my educational journey at Universiti Teknologi Mara (UiTM) Cawangan Kedah, where I am pursuing a Diploma in Informatics Library (CDIM144). I hope to achieve good results this semester, graduate successfully, and continue my studies by pursuing a degree.</p> 
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Anisa's Website. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="edu.html">TOP</a>
+        <a href="index.html">Home</a>
+        <a href="preschool.html">Next page</a>
+        <a href="fam.html">Next</a>
+    </div>
+</footer>
+
+</body>
+</html>
+

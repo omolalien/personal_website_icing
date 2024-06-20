@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ADD8E6; 
+            padding: 30px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #A0CFEC; 
+            padding: 10px; 
+            border-radius: 10px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0000EE; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+           font-weight: bold;
+           color: #0C090A;
+       }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0CFEC;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #0000EE;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ADD8E6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ADD8E6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #B3D9D9; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            padding-top: 60px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a.button-link:link, a.button-link:visited {
+            background-color: #A0CFEC;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a.button-link:hover, a.button-link:active {
+            background-color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size:40px; font-family:Garamond;">Interest &#128218;</h1>
+    <p style="font-size:30px; font-family:Garamond;">that Anisa like</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="bio.html">Biodata</a> |
+    <a href="interest.html" class="active">Interest</a> |
+    <div class="dropdown">
+        <a href="edu.html" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+            <a href="preschool.html" target="_blank">Preschool</a>
+            <a href="primary.html" target="_blank">Primary School</a>
+            <a href="secondaryschool.html" target="_blank">Secondary School</a>
+            <a href="university.html" target="_blank">University</a>
+        </div>
+    </div> |
+    <a href="fam.html">Family</a> |
+    <div class="dropdown">
+        <a href="gallery.html" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+            <a href="photo.html" target="_blank">Photo</a>
+            <a href="video.html" target="_blank">Video</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="image-container">
+        <img src="image/anisa_favourite_artist.jpg" alt="Anisa Nazihah favourite artist" class="zoomable">
+        <img src="image/anisa's_movie_favourite.jpg" alt="Anisa Nazihah movies favourite" class="zoomable">
+    </div>
+    <div class="text-container">
+        <h2>🎞️✮⋆˙Anisa's interest🎧✩°</h2> 
+        <h3>Anisa's favourite singer</h3> 
+        <p>As you can see I really love music such as K-pop, Pop, R&B, Hip Hop and Rap. I really love K-pop group which are ATEEZ, TREASURE and NewJeans. Even though I really didn't know Korean language but I still can know what is music about using English lyrics. ATEEZ is really unique K-Pop Boy Group because there music really special and have a storyline of that. TREASURE also my favourite K-Pop Boy Group and there also have powerfull song and I really like their music. NEWJEANS is know Y2K concept which their music really give nostalgia also the essence of the late 1990s and early 2000s pop culture.</p>
+        <p>Moreover, I also really love Yuna since when I was a kid. Yuna has beautiful and aesthetic music and lyrics in her own music. Her music that I really like is "Dan Sebenarnya", "Terukir di Bintang", "Rescue", and "Blank Marque". Last but not least, I like The Weeknd because he music is knows as RnB genre. His music was very famous such as "Die For You", "Blinding Lights", "Starboy" and "Popular".</p> 
+
+        <a href="audio.html" class="button-link">Go to Music Page</a>
+
+                   <h3>Anisa's favourite movie</h3> 
+        <p>Here is my favorite movie. I really like watching movies with my friends and family. My top favorite movie is The Secret Life of Pets because this movie is very cute and funny. As for recommendations, I'd suggest Puss in Boots, Words Bubble Up Like Soda Pop, The Wind Rises, Burn the House Down, and Girl From Nowhere. In Japanese movies, I particularly love Studio Ghibli films because of their beautiful, aesthetic, and colorful animation. For Korean movies, I enjoy both thrillers and romance genres. Some favorites of mine include Unlocked, 20th Century Girl, The Call (2020), Innocence, and Be With You.</p>
+        <p>I'm also a fan of Korean dramas, also known as K-dramas. Some of my favorites are Bad and Crazy, Flower of Evil, It's Okay to Not Be Okay, The Glory, and Mask Girl. There are many more K-dramas I'd like to watch, but currently, I'm busy with assignments. Meanwhile, I also enjoy watching family movies, especially animations like Minions: The Rise of Gru, The Croods, Hotel Transylvania 2, Kung Fu Panda 4, and Coco. Lastly, here are my top 5 Malay animated TV shows. First is Boboiboy; I love the series because of its comedy and action scenes. Second is Upin and Ipin. Third is Pada Zaman Dahulu. Fourth is Mechamato Series, and fifth is Puteri."
+    </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<footer>
+    <p>&copy; 2024 Anisa's Website. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="interest.html">TOP</a>
+        <a href="index.html">Home</a>
+        <a href="edu.html">Next</a>
+    </div>
+</footer>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var images = document.getElementsByClassName('zoomable');
+    var modalImg = document.getElementById("img01");
+
+    Array.from(images).forEach(img => {
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    // Close the modal when clicking anywhere outside the image
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

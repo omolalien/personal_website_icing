@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ADD8E6; 
+            padding: 30px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #A0CFEC; 
+            padding: 10px; 
+            border-radius: 10px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0000EE; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+           font-weight: bold;
+           color: #0C090A;
+       }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0CFEC;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #0000EE;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ADD8E6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ADD8E6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #B3D9D9; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size:40px; font-family:Garamond;">WELCOME &#128062;</h1>
+    <i><p style="font-size:30px; font-family:Garamond;">to Anisa's Website</p></i>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a> |
+    <a href="bio.html">Biodata</a> |
+    <a href="interest.html">Interest</a> |
+    <div class="dropdown">
+        <a href="edu.html" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+            <a href="preschool.html" target="_blank">Preschool</a>
+            <a href="primary.html" target="_blank">Primary School</a>
+            <a href="secondaryschool.html" target="_blank">Secondary School</a>
+            <a href="university.html" target="_blank">University</a>
+        </div>
+    </div> |
+    <a href="fam.html">Family</a> |
+    <div class="dropdown">
+        <a href="gallery.html" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+            <a href="photo.html" target="_blank">Photo</a>
+            <a href="video.html" target="_blank">Video</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="image-container">
+        <img src="image/anisa_nazihah.jpg" alt="Anisa Nazihah">
+    </div>
+    <div class="text-container">
+        <h1>Hello⭑⚝⭒</h1>
+        <p>My name is Nur Anisa Nazihah binti Kelana. I am student Universiti Teknologi Mara (UiTM) Cawangan Kedah and course Diploma Informatics Library (CDIM144).</p>
+        <p>This is my personal website where you can find more information about myself, my interests, my education, and my family. I have a passion for informatics and library sciences, and I am excited to share my journey and experiences with you. Feel free to explore the various sections to learn more about my background and hobbies.</p> 
+        <p>Thank you for visiting! >ᴗ<</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Anisa's Website. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">TOP</a>
+        <a href="index.html">Home</a>
+        <a href="bio.html">Next</a>
+    </div>
+</footer>
+
+</body>
+</html>
+

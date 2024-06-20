@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ADD8E6; 
+            padding: 30px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #A0CFEC; 
+            padding: 10px; 
+            border-radius: 10px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0000EE; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+           font-weight: bold;
+           color: #0C090A;
+       }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0CFEC;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #0000EE;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ADD8E6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ADD8E6;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+
+        .image-container img {
+            width: 30%; 
+            height: auto;
+            margin: 10px; 
+        }
+
+        .text-container {
+            padding: 20px;
+        }
+
+        .bio-header {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        .bio-header img {
+            margin-left: 10px;
+            width: 50px; 
+            height: auto;
+        }
+
+        footer {
+            background-color: #B3D9D9; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size:40px; font-family:Garamond;">Video 📹</h1>
+    <p style="font-size:30px; font-family:Garamond;">of Anisa's collection</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="bio.html">Biodata</a> |
+    <a href="interest.html">Interest</a> |
+    <div class="dropdown">
+        <a href="edu.html" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+            <a href="preschool.html" target="_blank">Preschool</a>
+            <a href="primary.html" target="_blank">Primary School</a>
+            <a href="secondaryschool.html" target="_blank">Secondary School</a>
+            <a href="university.html" target="_blank">University</a>
+        </div>
+    </div> |
+    <a href="fam.html">Family</a> |
+    <div class="dropdown">
+        <a href="gallery.html" class="active dropbtn">Gallery</a>
+        <div class="dropdown-content">
+            <a href="photo.html" target="_blank">Photo</a>
+            <a href="video.html" target="_blank"class="active dropbtn">Video</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+       <div class="bio-header">
+            <h2>Anisa's video with family</h2>
+       </div>
+    </div>
+    <div class="section">
+        <center><video src="video/anisa_family_i.mov" alt="ATEEZ" controls width="640" height="480"></video></center>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Anisa's Website. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="video.html">TOP</a>
+        <a href="index.html">Home</a>
+        <a href="photo.html">Previous page</a>
+    </div>
+</footer>
+
+</body>
+</html>

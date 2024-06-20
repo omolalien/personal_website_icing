@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ADD8E6; 
+            padding: 30px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #A0CFEC; 
+            padding: 10px; 
+            border-radius: 10px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0000EE; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+           font-weight: bold;
+           color: #0C090A;
+       }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0CFEC;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #0000EE;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ADD8E6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ADD8E6;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row-reverse; 
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .bio-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .bio-header img {
+            margin-left: 10px;
+            width: 60px; 
+            height: auto;
+        }
+
+        footer {
+            background-color: #B3D9D9; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size:40px; font-family:Garamond;">Biodata &#128221;</h1>
+    <p style="font-size:30px; font-family:Garamond;">about Anisa</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="bio.html" class="active">Biodata</a> |
+    <a href="interest.html">Interest</a> |
+    <div class="dropdown">
+        <a href="edu.html" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+            <a href="preschool.html" target="_blank">Preschool</a>
+            <a href="primary.html" target="_blank">Primary School</a>
+            <a href="secondaryschool.html" target="_blank">Secondary School</a>
+            <a href="university.html" target="_blank">University</a>
+        </div>
+    </div> |
+    <a href="fam.html">Family</a> |
+    <div class="dropdown">
+        <a href="gallery.html" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+            <a href="photo.html" target="_blank">Photo</a>
+            <a href="video.html" target="_blank">Video</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="image-container">
+        <img src="image/anisa.jpg" alt="Anisa Nazihah">
+    </div>
+    <div class="text-container">
+        <div class="bio-header">
+            <h2>Anisa's Biodata</h2>
+            <img src="image/cat.gif" alt="Cat GIF">
+        </div>
+        <p>As you know, my name is Nur Anisa Nazihah binti Kelana. I was born on 26th September 2004 and I am 20 years old. I was born in Hospital Putrajaya, Putrajaya. When I was 4 years old, I moved to and lived in Sabak Bernam, Selangor.</p>
+        <p>I pursued my early education at Sekolah Kebangsaan Doktor Abdul Latiff in Sabak Bernam. After completing my primary education, I attended SMK Ungku Aziz in Sabak Bernam, where I developed an interest in subjects such as Sports Science, Visual Arts Education, and Technical Communication Graphics. I really loved drawing when I was in school. As a child, I wanted to be a painter but realized it would be challenging to explore art in detail. Currently, I am pursuing a Diploma in Informatics Library at UiTM Kedah, which focuses on becoming a librarian. I hope to achieve good results this semester and graduate in the future.</p>
+        <p>My MBTI Personality is ENFJ, which stands for Extraverted, Intuitive, Feeling, Judging. People might think that I am quiet and introverted, but I am actually extroverted and enjoy talking and sharing things I like with others. Moreover, I spend my time reading novels, listening to music, watching movies, and taking photographs. I enjoy reading fiction novels, particularly in the genres of fantasy, manga, and mystery. I love taking pictures of cats, nature, and building architecture. I also enjoy visiting museums because they help me relax and explore new information and knowledge.</p>
+        <p>I hope you are all doing well and that this gives you more insight into who I am. Hope we meet again, and have a nice day.(˶ᵔ ᵕ ᵔ˶)</p>  
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Anisa's Website. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="bio.html">TOP</a>
+        <a href="index.html">Home</a>
+        <a href="interest.html">Next</a>
+    </div>
+</footer>
+
+</body>
+</html>
